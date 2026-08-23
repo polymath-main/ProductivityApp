@@ -1,9 +1,23 @@
-import React from 'react';
-import { View, Text, StyleSheet, FlatList, TouchableOpacity } from 'react-native';
+import React, { useEffect } from 'react';
+import { View, Text, StyleSheet, FlatList, TouchableOpacity, LayoutAnimation, UIManager, Platform } from 'react-native';
 import { theme } from '../styles/theme';
+
+if (Platform.OS === 'android' && UIManager.setLayoutAnimationEnabledExperimental) {
+  UIManager.setLayoutAnimationEnabledExperimental(true);
+}
 
 export default function TaskList({ tasks, onToggleTask, onDeleteTask }) {
   
+  const handleToggle = (id) => {
+    LayoutAnimation.configureNext(LayoutAnimation.Presets.spring);
+    onToggleTask(id);
+  };
+
+  const handleDelete = (id) => {
+    LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
+    onDeleteTask(id);
+  };
+
   const getPriorityColor = (priority) => {
     switch (priority) {
       case 'high': return theme.colors.error;
@@ -17,7 +31,8 @@ export default function TaskList({ tasks, onToggleTask, onDeleteTask }) {
     <View style={styles.taskCard}>
       <TouchableOpacity 
         style={[styles.checkbox, item.completed && styles.checkboxCompleted]} 
-        onPress={() => onToggleTask(item.id)}
+        onPress={() => handleToggle(item.id)}
+        activeOpacity={0.7}
       >
         {item.completed && <Text style={styles.checkMark}>✓</Text>}
       </TouchableOpacity>
@@ -35,7 +50,7 @@ export default function TaskList({ tasks, onToggleTask, onDeleteTask }) {
         </View>
       </View>
 
-      <TouchableOpacity onPress={() => onDeleteTask(item.id)} style={styles.deleteButton}>
+      <TouchableOpacity onPress={() => handleDelete(item.id)} style={styles.deleteButton} activeOpacity={0.6}>
         <Text style={styles.deleteText}>✕</Text>
       </TouchableOpacity>
     </View>
@@ -54,6 +69,7 @@ export default function TaskList({ tasks, onToggleTask, onDeleteTask }) {
           keyExtractor={item => item.id}
           renderItem={renderItem}
           showsVerticalScrollIndicator={false}
+          contentContainerStyle={{ paddingBottom: theme.spacing.xl }}
         />
       )}
     </View>
@@ -65,10 +81,11 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   header: {
-    fontSize: 20,
-    fontWeight: 'bold',
+    fontSize: 22,
+    fontWeight: '700',
     color: theme.colors.text,
     marginBottom: theme.spacing.m,
+    letterSpacing: 0.5,
   },
   emptyState: {
     padding: theme.spacing.xl,
@@ -76,10 +93,14 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: theme.colors.surface,
     borderRadius: theme.borderRadius.l,
+    borderWidth: 1,
+    borderColor: theme.colors.border,
+    borderStyle: 'dashed',
   },
   emptyText: {
     color: theme.colors.textSecondary,
     fontSize: 16,
+    fontStyle: 'italic',
   },
   taskCard: {
     flexDirection: 'row',
@@ -88,11 +109,18 @@ const styles = StyleSheet.create({
     borderRadius: theme.borderRadius.m,
     marginBottom: theme.spacing.s,
     alignItems: 'center',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    elevation: 2,
+    borderWidth: 1,
+    borderColor: theme.colors.border,
   },
   checkbox: {
-    width: 24,
-    height: 24,
-    borderRadius: 12,
+    width: 26,
+    height: 26,
+    borderRadius: 13,
     borderWidth: 2,
     borderColor: theme.colors.primary,
     justifyContent: 'center',
@@ -101,10 +129,11 @@ const styles = StyleSheet.create({
   },
   checkboxCompleted: {
     backgroundColor: theme.colors.primary,
+    borderColor: theme.colors.primary,
   },
   checkMark: {
     color: theme.colors.background,
-    fontSize: 14,
+    fontSize: 16,
     fontWeight: 'bold',
   },
   taskContent: {
@@ -113,7 +142,8 @@ const styles = StyleSheet.create({
   taskTitle: {
     color: theme.colors.text,
     fontSize: 16,
-    marginBottom: 4,
+    marginBottom: 6,
+    fontWeight: '500',
   },
   taskTitleCompleted: {
     color: theme.colors.textSecondary,
@@ -124,15 +154,17 @@ const styles = StyleSheet.create({
   },
   priorityBadge: {
     paddingHorizontal: 8,
-    paddingVertical: 2,
+    paddingVertical: 3,
     borderRadius: theme.borderRadius.s,
   },
   priorityText: {
     fontSize: 10,
-    fontWeight: 'bold',
+    fontWeight: '700',
+    letterSpacing: 0.5,
   },
   deleteButton: {
     padding: theme.spacing.s,
+    marginLeft: theme.spacing.s,
   },
   deleteText: {
     color: theme.colors.textSecondary,
