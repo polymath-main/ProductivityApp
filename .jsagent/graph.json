@@ -1,0 +1,29 @@
+{
+  "nodes": {
+    "native_android/app/src/main/java/com/productivityapp/MainActivity.kt:MainActivity": {
+      "file": "native_android/app/src/main/java/com/productivityapp/MainActivity.kt",
+      "name": "MainActivity",
+      "type": "Class",
+      "startLine": 20
+    },
+    "native_android/app/src/main/java/com/productivityapp/ml/OmnibrainEngine.kt:OmnibrainEngine": {
+      "file": "native_android/app/src/main/java/com/productivityapp/ml/OmnibrainEngine.kt",
+      "name": "OmnibrainEngine",
+      "type": "Class",
+      "startLine": 3
+    },
+    "native_android/app/src/test/java/com/productivityapp/services/OmniFlowTest.kt:OmniFlowTest": {
+      "file": "native_android/app/src/test/java/com/productivityapp/services/OmniFlowTest.kt",
+      "name": "OmniFlowTest",
+      "type": "Class",
+      "startLine": 11
+    },
+    "native_android/app/src/test/java/com/productivityapp/services/OmniPredictTest.kt:OmniPredictTest": {
+      "file": "native_android/app/src/test/java/com/productivityapp/services/OmniPredictTest.kt",
+      "name": "OmniPredictTest",
+      "type": "Class",
+      "startLine": 11
+    }
+  },
+  "edges": []
+}
