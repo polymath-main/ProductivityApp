@@ -4,7 +4,13 @@
       "file": "native_android/app/src/main/java/com/productivityapp/MainActivity.kt",
       "name": "MainActivity",
       "type": "Class",
-      "startLine": 20
+      "startLine": 23
+    },
+    "native_android/app/src/main/java/com/productivityapp/TaskViewModel.kt:TaskViewModel": {
+      "file": "native_android/app/src/main/java/com/productivityapp/TaskViewModel.kt",
+      "name": "TaskViewModel",
+      "type": "Class",
+      "startLine": 14
     },
     "native_android/app/src/main/java/com/productivityapp/ml/OmnibrainEngine.kt:OmnibrainEngine": {
       "file": "native_android/app/src/main/java/com/productivityapp/ml/OmnibrainEngine.kt",
