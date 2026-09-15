@@ -4,7 +4,7 @@
       "file": "native_android/app/src/main/java/com/productivityapp/MainActivity.kt",
       "name": "MainActivity",
       "type": "Class",
-      "startLine": 23
+      "startLine": 25
     },
     "native_android/app/src/main/java/com/productivityapp/TaskViewModel.kt:TaskViewModel": {
       "file": "native_android/app/src/main/java/com/productivityapp/TaskViewModel.kt",
