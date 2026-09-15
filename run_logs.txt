@@ -1,355 +1,344 @@
-Build & Deploy APK	Set up job	﻿2026-09-15T08:18:21.6529139Z Current runner version: '2.337.0'
-Build & Deploy APK	Set up job	2026-09-15T08:18:21.6555306Z ##[group]Runner Image Provisioner
-Build & Deploy APK	Set up job	2026-09-15T08:18:21.6556216Z Hosted Compute Agent
-Build & Deploy APK	Set up job	2026-09-15T08:18:21.6557445Z Version: 20260828.587
-Build & Deploy APK	Set up job	2026-09-15T08:18:21.6558153Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
-Build & Deploy APK	Set up job	2026-09-15T08:18:21.6558885Z Build Date: 2026-08-28T16:44:25Z
-Build & Deploy APK	Set up job	2026-09-15T08:18:21.6559610Z Worker ID: {89b5dc22-5799-4746-b357-41018919b65c}
-Build & Deploy APK	Set up job	2026-09-15T08:18:21.6560371Z Azure Region: westus
-Build & Deploy APK	Set up job	2026-09-15T08:18:21.6560922Z ##[endgroup]
-Build & Deploy APK	Set up job	2026-09-15T08:18:21.6562709Z ##[group]Operating System
-Build & Deploy APK	Set up job	2026-09-15T08:18:21.6563372Z Ubuntu
-Build & Deploy APK	Set up job	2026-09-15T08:18:21.6563955Z 24.04.5
-Build & Deploy APK	Set up job	2026-09-15T08:18:21.6564522Z LTS
-Build & Deploy APK	Set up job	2026-09-15T08:18:21.6565059Z ##[endgroup]
-Build & Deploy APK	Set up job	2026-09-15T08:18:21.6565675Z ##[group]Runner Image
-Build & Deploy APK	Set up job	2026-09-15T08:18:21.6566271Z Image: ubuntu-24.04
-Build & Deploy APK	Set up job	2026-09-15T08:18:21.6567289Z Version: 20260907.300.1
-Build & Deploy APK	Set up job	2026-09-15T08:18:21.6568476Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260907.300/images/ubuntu/Ubuntu2404-Readme.md
-Build & Deploy APK	Set up job	2026-09-15T08:18:21.6570274Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260907.300
-Build & Deploy APK	Set up job	2026-09-15T08:18:21.6571475Z ##[endgroup]
-Build & Deploy APK	Set up job	2026-09-15T08:18:21.6573095Z ##[group]GITHUB_TOKEN Permissions
-Build & Deploy APK	Set up job	2026-09-15T08:18:21.6575248Z Contents: read
-Build & Deploy APK	Set up job	2026-09-15T08:18:21.6575972Z Metadata: read
-Build & Deploy APK	Set up job	2026-09-15T08:18:21.6576758Z Packages: read
-Build & Deploy APK	Set up job	2026-09-15T08:18:21.6577337Z ##[endgroup]
-Build & Deploy APK	Set up job	2026-09-15T08:18:21.6579536Z Secret source: Actions
-Build & Deploy APK	Set up job	2026-09-15T08:18:21.6580512Z Cache mode: write
-Build & Deploy APK	Set up job	2026-09-15T08:18:21.6581486Z Prepare workflow directory
-Build & Deploy APK	Set up job	2026-09-15T08:18:21.7000051Z Prepare all required actions
-Build & Deploy APK	Set up job	2026-09-15T08:18:21.7050603Z Getting action download info
-Build & Deploy APK	Set up job	2026-09-15T08:18:22.1490779Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
-Build & Deploy APK	Set up job	2026-09-15T08:18:22.2735120Z Download action repository 'actions/setup-java@v4' (SHA:cf277c60eb25467037889841efdb72551f06f6c3)
-Build & Deploy APK	Set up job	2026-09-15T08:18:22.8088352Z Download action repository 'gradle/actions@v3' (SHA:d9c87d481d55275bb5441eef3fe0e46805f9ef70)
-Build & Deploy APK	Set up job	2026-09-15T08:18:23.6582401Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
-Build & Deploy APK	Set up job	2026-09-15T08:18:23.8863450Z Complete job name: Build & Deploy APK
-Build & Deploy APK	Checkout Code	﻿2026-09-15T08:18:23.9657343Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:23.9665529Z ##[group]Run actions/checkout@v4
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:23.9666183Z with:
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:23.9666845Z   repository: polymath-main/ProductivityApp
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:23.9669847Z   token: ***
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:23.9670186Z   ssh-strict: true
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:23.9670523Z   ssh-user: git
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:23.9670856Z   persist-credentials: true
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:23.9671223Z   clean: true
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:23.9671560Z   sparse-checkout-cone-mode: true
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:23.9671988Z   fetch-depth: 1
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:23.9672313Z   fetch-tags: false
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:23.9672653Z   show-progress: true
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:23.9673001Z   lfs: false
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:23.9673306Z   submodules: false
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:23.9673696Z   set-safe-directory: true
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:23.9674079Z   allow-unsafe-pr-checkout: false
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:23.9674752Z ##[endgroup]
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.0773111Z Syncing repository: polymath-main/ProductivityApp
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.0775372Z ##[group]Getting Git version info
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.0776366Z Working directory is '/home/runner/work/ProductivityApp/ProductivityApp'
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.0777820Z [command]/usr/bin/git version
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.0847175Z git version 2.55.0
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.0873036Z ##[endgroup]
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.0890912Z Temporarily overriding HOME='/home/runner/work/_temp/10dd1850-9500-406b-8f8e-e66c6cf4dc92' before making global git config changes
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.0892286Z Adding repository directory to the temporary git global config as a safe directory
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.0898439Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ProductivityApp/ProductivityApp
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.0954855Z Deleting the contents of '/home/runner/work/ProductivityApp/ProductivityApp'
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.0958943Z ##[group]Initializing the repository
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.0964261Z [command]/usr/bin/git init /home/runner/work/ProductivityApp/ProductivityApp
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.1078427Z hint: Using 'master' as the name for the initial branch. This default branch name
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.1080297Z hint: will change to "main" in Git 3.0. To configure the initial branch name
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.1081992Z hint: to use in all of your new repositories, which will suppress this warning,
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.1083284Z hint: call:
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.1083851Z hint:
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.1084795Z hint: 	git config --global init.defaultBranch <name>
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.1085487Z hint:
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.1086808Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.1088177Z hint: 'development'. The just-created branch can be renamed via this command:
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.1088831Z hint:
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.1089175Z hint: 	git branch -m <name>
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.1089551Z hint:
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.1090020Z hint: Disable this message with "git config set advice.defaultBranchName false"
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.1090851Z Initialized empty Git repository in /home/runner/work/ProductivityApp/ProductivityApp/.git/
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.1104342Z [command]/usr/bin/git remote add origin https://github.com/polymath-main/ProductivityApp
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.1173460Z ##[endgroup]
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.1174444Z ##[group]Disabling automatic garbage collection
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.1178325Z [command]/usr/bin/git config --local gc.auto 0
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.1211881Z ##[endgroup]
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.1212838Z ##[group]Setting up auth
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.1219053Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.1252768Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.1659815Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.1779238Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.1945782Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.1984525Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.2215575Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.2256091Z ##[endgroup]
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.2257133Z ##[group]Fetching the repository
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.2266262Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +a73846c4cb9cb8f0173c83648d503238bdddf405:refs/remotes/origin/main
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.6743034Z From https://github.com/polymath-main/ProductivityApp
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.6743941Z  * [new ref]         a73846c4cb9cb8f0173c83648d503238bdddf405 -> origin/main
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.6748717Z ##[endgroup]
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.6749352Z ##[group]Determining the checkout info
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.6751780Z ##[endgroup]
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.6758415Z [command]/usr/bin/git sparse-checkout disable
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.6814236Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.6850546Z ##[group]Checking out the ref
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.6855819Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.6942711Z Switched to a new branch 'main'
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.6947905Z branch 'main' set up to track 'origin/main'.
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.6998815Z ##[endgroup]
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.7002608Z [command]/usr/bin/git log -1 --format=%H
-Build & Deploy APK	Checkout Code	2026-09-15T08:18:24.7031643Z a73846c4cb9cb8f0173c83648d503238bdddf405
-Build & Deploy APK	Set up JDK 17	﻿2026-09-15T08:18:24.7353196Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
-Build & Deploy APK	Set up JDK 17	2026-09-15T08:18:24.7355645Z ##[group]Run actions/setup-java@v4
-Build & Deploy APK	Set up JDK 17	2026-09-15T08:18:24.7356010Z with:
-Build & Deploy APK	Set up JDK 17	2026-09-15T08:18:24.7356320Z   java-version: 17
-Build & Deploy APK	Set up JDK 17	2026-09-15T08:18:24.7356803Z   distribution: temurin
-Build & Deploy APK	Set up JDK 17	2026-09-15T08:18:24.7357090Z   cache: gradle
-Build & Deploy APK	Set up JDK 17	2026-09-15T08:18:24.7357348Z   java-package: jdk
-Build & Deploy APK	Set up JDK 17	2026-09-15T08:18:24.7357616Z   check-latest: false
-Build & Deploy APK	Set up JDK 17	2026-09-15T08:18:24.7357881Z   server-id: github
-Build & Deploy APK	Set up JDK 17	2026-09-15T08:18:24.7358181Z   server-username: GITHUB_ACTOR
-Build & Deploy APK	Set up JDK 17	2026-09-15T08:18:24.7358502Z   server-password: GITHUB_TOKEN
-Build & Deploy APK	Set up JDK 17	2026-09-15T08:18:24.7358832Z   overwrite-settings: true
-Build & Deploy APK	Set up JDK 17	2026-09-15T08:18:24.7359113Z   job-status: success
-Build & Deploy APK	Set up JDK 17	2026-09-15T08:18:24.7361721Z   token: ***
-Build & Deploy APK	Set up JDK 17	2026-09-15T08:18:24.7361984Z ##[endgroup]
-Build & Deploy APK	Set up JDK 17	2026-09-15T08:18:24.9125417Z ##[warning]setup-java v4 is deprecated and will no longer receive updates. Please migrate to actions/setup-java@v5.
-Build & Deploy APK	Set up JDK 17	2026-09-15T08:18:24.9139665Z ##[group]Installed distributions
-Build & Deploy APK	Set up JDK 17	2026-09-15T08:18:24.9313449Z Resolved Java 17.0.20+1 from tool-cache
-Build & Deploy APK	Set up JDK 17	2026-09-15T08:18:24.9314177Z Setting Java 17.0.20+1 as the default
-Build & Deploy APK	Set up JDK 17	2026-09-15T08:18:24.9327367Z (node:2264) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
-Build & Deploy APK	Set up JDK 17	2026-09-15T08:18:24.9328866Z (Use `node --trace-deprecation ...` to show where the warning was created)
-Build & Deploy APK	Set up JDK 17	2026-09-15T08:18:24.9332014Z Creating toolchains.xml for JDK version 17 from temurin
-Build & Deploy APK	Set up JDK 17	2026-09-15T08:18:24.9413524Z Writing to /home/runner/.m2/toolchains.xml
-Build & Deploy APK	Set up JDK 17	2026-09-15T08:18:24.9414191Z 
-Build & Deploy APK	Set up JDK 17	2026-09-15T08:18:24.9414441Z Java configuration:
-Build & Deploy APK	Set up JDK 17	2026-09-15T08:18:24.9414981Z   Distribution: temurin
-Build & Deploy APK	Set up JDK 17	2026-09-15T08:18:24.9415533Z   Version: 17.0.20+1
-Build & Deploy APK	Set up JDK 17	2026-09-15T08:18:24.9416242Z   Path: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
-Build & Deploy APK	Set up JDK 17	2026-09-15T08:18:24.9417166Z 
-Build & Deploy APK	Set up JDK 17	2026-09-15T08:18:24.9417971Z ##[endgroup]
-Build & Deploy APK	Set up JDK 17	2026-09-15T08:18:24.9438660Z Creating settings.xml with server-id: github
-Build & Deploy APK	Set up JDK 17	2026-09-15T08:18:24.9439915Z Writing to /home/runner/.m2/settings.xml
-Build & Deploy APK	Set up JDK 17	2026-09-15T08:18:25.2793870Z gradle cache is not found
-Build & Deploy APK	Setup Gradle	﻿2026-09-15T08:18:25.3097986Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
-Build & Deploy APK	Setup Gradle	2026-09-15T08:18:25.3099505Z ##[group]Run gradle/actions/setup-gradle@v3
-Build & Deploy APK	Setup Gradle	2026-09-15T08:18:25.3099871Z with:
-Build & Deploy APK	Setup Gradle	2026-09-15T08:18:25.3100117Z   gradle-version: 8.7
-Build & Deploy APK	Setup Gradle	2026-09-15T08:18:25.3100397Z   cache-disabled: false
-Build & Deploy APK	Setup Gradle	2026-09-15T08:18:25.3100672Z   cache-read-only: false
-Build & Deploy APK	Setup Gradle	2026-09-15T08:18:25.3100952Z   cache-write-only: false
-Build & Deploy APK	Setup Gradle	2026-09-15T08:18:25.3101251Z   cache-overwrite-existing: false
-Build & Deploy APK	Setup Gradle	2026-09-15T08:18:25.3101608Z   gradle-home-cache-includes: caches
+Build & Deploy APK	Set up job	﻿2026-09-15T08:24:10.0721700Z Current runner version: '2.337.0'
+Build & Deploy APK	Set up job	2026-09-15T08:24:10.0748936Z ##[group]Runner Image Provisioner
+Build & Deploy APK	Set up job	2026-09-15T08:24:10.0749823Z Hosted Compute Agent
+Build & Deploy APK	Set up job	2026-09-15T08:24:10.0750840Z Version: 20260828.587
+Build & Deploy APK	Set up job	2026-09-15T08:24:10.0751551Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+Build & Deploy APK	Set up job	2026-09-15T08:24:10.0752286Z Build Date: 2026-08-28T16:44:25Z
+Build & Deploy APK	Set up job	2026-09-15T08:24:10.0753026Z Worker ID: {64879eec-a379-4222-86f4-df07175a2412}
+Build & Deploy APK	Set up job	2026-09-15T08:24:10.0753735Z Azure Region: westus
+Build & Deploy APK	Set up job	2026-09-15T08:24:10.0754358Z ##[endgroup]
+Build & Deploy APK	Set up job	2026-09-15T08:24:10.0756160Z ##[group]Operating System
+Build & Deploy APK	Set up job	2026-09-15T08:24:10.0756840Z Ubuntu
+Build & Deploy APK	Set up job	2026-09-15T08:24:10.0757442Z 24.04.5
+Build & Deploy APK	Set up job	2026-09-15T08:24:10.0758004Z LTS
+Build & Deploy APK	Set up job	2026-09-15T08:24:10.0758561Z ##[endgroup]
+Build & Deploy APK	Set up job	2026-09-15T08:24:10.0759274Z ##[group]Runner Image
+Build & Deploy APK	Set up job	2026-09-15T08:24:10.0759933Z Image: ubuntu-24.04
+Build & Deploy APK	Set up job	2026-09-15T08:24:10.0760829Z Version: 20260907.300.1
+Build & Deploy APK	Set up job	2026-09-15T08:24:10.0762051Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260907.300/images/ubuntu/Ubuntu2404-Readme.md
+Build & Deploy APK	Set up job	2026-09-15T08:24:10.0763939Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260907.300
+Build & Deploy APK	Set up job	2026-09-15T08:24:10.0764983Z ##[endgroup]
+Build & Deploy APK	Set up job	2026-09-15T08:24:10.0766732Z ##[group]GITHUB_TOKEN Permissions
+Build & Deploy APK	Set up job	2026-09-15T08:24:10.0768989Z Contents: read
+Build & Deploy APK	Set up job	2026-09-15T08:24:10.0769820Z Metadata: read
+Build & Deploy APK	Set up job	2026-09-15T08:24:10.0770659Z Packages: read
+Build & Deploy APK	Set up job	2026-09-15T08:24:10.0771276Z ##[endgroup]
+Build & Deploy APK	Set up job	2026-09-15T08:24:10.0773910Z Secret source: Actions
+Build & Deploy APK	Set up job	2026-09-15T08:24:10.0774926Z Cache mode: write
+Build & Deploy APK	Set up job	2026-09-15T08:24:10.0776105Z Prepare workflow directory
+Build & Deploy APK	Set up job	2026-09-15T08:24:10.1191632Z Prepare all required actions
+Build & Deploy APK	Set up job	2026-09-15T08:24:10.1241625Z Getting action download info
+Build & Deploy APK	Set up job	2026-09-15T08:24:10.4995815Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+Build & Deploy APK	Set up job	2026-09-15T08:24:10.6053856Z Download action repository 'actions/setup-java@v5' (SHA:b6effb05e454b25005698d916606bdc6ffcbf961)
+Build & Deploy APK	Set up job	2026-09-15T08:24:11.2022038Z Download action repository 'gradle/actions@v3' (SHA:d9c87d481d55275bb5441eef3fe0e46805f9ef70)
+Build & Deploy APK	Set up job	2026-09-15T08:24:12.1969823Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+Build & Deploy APK	Set up job	2026-09-15T08:24:12.4185365Z Complete job name: Build & Deploy APK
+Build & Deploy APK	Checkout Code	﻿2026-09-15T08:24:12.4949847Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.4958204Z ##[group]Run actions/checkout@v4
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.4958747Z with:
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.4959056Z   repository: polymath-main/ProductivityApp
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.4961879Z   token: ***
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.4962149Z   ssh-strict: true
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.4962407Z   ssh-user: git
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.4962667Z   persist-credentials: true
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.4962951Z   clean: true
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.4963212Z   sparse-checkout-cone-mode: true
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.4963532Z   fetch-depth: 1
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.4963780Z   fetch-tags: false
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.4964042Z   show-progress: true
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.4964291Z   lfs: false
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.4964523Z   submodules: false
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.4964815Z   set-safe-directory: true
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.4965106Z   allow-unsafe-pr-checkout: false
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.4965688Z ##[endgroup]
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.6020333Z Syncing repository: polymath-main/ProductivityApp
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.6022745Z ##[group]Getting Git version info
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.6023675Z Working directory is '/home/runner/work/ProductivityApp/ProductivityApp'
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.6024811Z [command]/usr/bin/git version
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.6103970Z git version 2.55.0
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.6128456Z ##[endgroup]
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.6146632Z Temporarily overriding HOME='/home/runner/work/_temp/5df89c09-c51a-47b3-90ba-7d8a6549b020' before making global git config changes
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.6163302Z Adding repository directory to the temporary git global config as a safe directory
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.6168503Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ProductivityApp/ProductivityApp
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.6224090Z Deleting the contents of '/home/runner/work/ProductivityApp/ProductivityApp'
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.6228201Z ##[group]Initializing the repository
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.6234897Z [command]/usr/bin/git init /home/runner/work/ProductivityApp/ProductivityApp
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.6389781Z hint: Using 'master' as the name for the initial branch. This default branch name
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.6391903Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.6393481Z hint: to use in all of your new repositories, which will suppress this warning,
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.6395277Z hint: call:
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.6396097Z hint:
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.6396849Z hint: 	git config --global init.defaultBranch <name>
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.6397676Z hint:
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.6398439Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.6399762Z hint: 'development'. The just-created branch can be renamed via this command:
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.6401019Z hint:
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.6401573Z hint: 	git branch -m <name>
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.6402213Z hint:
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.6403063Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.6404475Z Initialized empty Git repository in /home/runner/work/ProductivityApp/ProductivityApp/.git/
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.6407806Z [command]/usr/bin/git remote add origin https://github.com/polymath-main/ProductivityApp
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.6465873Z ##[endgroup]
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.6466804Z ##[group]Disabling automatic garbage collection
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.6471268Z [command]/usr/bin/git config --local gc.auto 0
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.6506849Z ##[endgroup]
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.6508018Z ##[group]Setting up auth
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.6515239Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.6551335Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.6976065Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.7018188Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.7264549Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.7305748Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.7547413Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.7592185Z ##[endgroup]
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.7593329Z ##[group]Fetching the repository
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:12.7603893Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +13ea20473d83ba3d84295de0ffc0b5e7990c95b8:refs/remotes/origin/main
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:13.2446881Z From https://github.com/polymath-main/ProductivityApp
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:13.2447704Z  * [new ref]         13ea20473d83ba3d84295de0ffc0b5e7990c95b8 -> origin/main
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:13.2452201Z ##[endgroup]
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:13.2452794Z ##[group]Determining the checkout info
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:13.2455926Z ##[endgroup]
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:13.2464333Z [command]/usr/bin/git sparse-checkout disable
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:13.2523301Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:13.2558787Z ##[group]Checking out the ref
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:13.2564336Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:13.2740647Z Switched to a new branch 'main'
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:13.2744801Z branch 'main' set up to track 'origin/main'.
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:13.2751688Z ##[endgroup]
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:13.2808840Z [command]/usr/bin/git log -1 --format=%H
+Build & Deploy APK	Checkout Code	2026-09-15T08:24:13.2841277Z 13ea20473d83ba3d84295de0ffc0b5e7990c95b8
+Build & Deploy APK	Set up JDK 17	﻿2026-09-15T08:24:13.3158623Z ##[group]Run actions/setup-java@v5
+Build & Deploy APK	Set up JDK 17	2026-09-15T08:24:13.3159069Z with:
+Build & Deploy APK	Set up JDK 17	2026-09-15T08:24:13.3159269Z   java-version: 17
+Build & Deploy APK	Set up JDK 17	2026-09-15T08:24:13.3159482Z   distribution: temurin
+Build & Deploy APK	Set up JDK 17	2026-09-15T08:24:13.3159700Z   cache: gradle
+Build & Deploy APK	Set up JDK 17	2026-09-15T08:24:13.3159899Z   java-package: jdk
+Build & Deploy APK	Set up JDK 17	2026-09-15T08:24:13.3160112Z   check-latest: false
+Build & Deploy APK	Set up JDK 17	2026-09-15T08:24:13.3160553Z   set-default: true
+Build & Deploy APK	Set up JDK 17	2026-09-15T08:24:13.3160773Z   verify-signature: false
+Build & Deploy APK	Set up JDK 17	2026-09-15T08:24:13.3160996Z   server-id: github
+Build & Deploy APK	Set up JDK 17	2026-09-15T08:24:13.3161215Z   server-username: GITHUB_ACTOR
+Build & Deploy APK	Set up JDK 17	2026-09-15T08:24:13.3161469Z   server-password: GITHUB_TOKEN
+Build & Deploy APK	Set up JDK 17	2026-09-15T08:24:13.3161718Z   overwrite-settings: true
+Build & Deploy APK	Set up JDK 17	2026-09-15T08:24:13.3161952Z   job-status: success
+Build & Deploy APK	Set up JDK 17	2026-09-15T08:24:13.3164375Z   token: ***
+Build & Deploy APK	Set up JDK 17	2026-09-15T08:24:13.3164605Z   show-download-progress: false
+Build & Deploy APK	Set up JDK 17	2026-09-15T08:24:13.3164859Z ##[endgroup]
+Build & Deploy APK	Set up JDK 17	2026-09-15T08:24:13.4728299Z ##[group]Installed distributions
+Build & Deploy APK	Set up JDK 17	2026-09-15T08:24:13.4800596Z Resolved Java 17.0.20+1 from tool-cache
+Build & Deploy APK	Set up JDK 17	2026-09-15T08:24:13.4801543Z Setting Java 17.0.20+1 as the default
+Build & Deploy APK	Set up JDK 17	2026-09-15T08:24:13.4813790Z Creating toolchains.xml for JDK version 17 from temurin
+Build & Deploy APK	Set up JDK 17	2026-09-15T08:24:13.4896638Z Writing to /home/runner/.m2/toolchains.xml
+Build & Deploy APK	Set up JDK 17	2026-09-15T08:24:13.4897436Z 
+Build & Deploy APK	Set up JDK 17	2026-09-15T08:24:13.4897695Z Java configuration:
+Build & Deploy APK	Set up JDK 17	2026-09-15T08:24:13.4898158Z   Distribution: temurin
+Build & Deploy APK	Set up JDK 17	2026-09-15T08:24:13.4898597Z   Version: 17.0.20+1
+Build & Deploy APK	Set up JDK 17	2026-09-15T08:24:13.4899239Z   Path: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+Build & Deploy APK	Set up JDK 17	2026-09-15T08:24:13.4899847Z 
+Build & Deploy APK	Set up JDK 17	2026-09-15T08:24:13.4900771Z ##[endgroup]
+Build & Deploy APK	Set up JDK 17	2026-09-15T08:24:13.4934892Z Creating settings.xml with server-id: github
+Build & Deploy APK	Set up JDK 17	2026-09-15T08:24:13.4936145Z Writing to /home/runner/.m2/settings.xml
+Build & Deploy APK	Set up JDK 17	2026-09-15T08:24:13.4937942Z Configured MAVEN_ARGS to include -ntp to suppress Maven transfer progress logs. Set 'show-download-progress: true' to keep the download progress output.
+Build & Deploy APK	Set up JDK 17	2026-09-15T08:24:13.8517291Z gradle cache is not found
+Build & Deploy APK	Setup Gradle	﻿2026-09-15T08:24:13.9624449Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:13.9625823Z ##[group]Run gradle/actions/setup-gradle@v3
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:13.9626108Z with:
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:13.9626296Z   gradle-version: 8.7
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:13.9626516Z   cache-disabled: false
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:13.9626743Z   cache-read-only: false
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:13.9626971Z   cache-write-only: false
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:13.9627216Z   cache-overwrite-existing: false
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:13.9627521Z   gradle-home-cache-includes: caches
 Build & Deploy APK	Setup Gradle	notifications
 Build & Deploy APK	Setup Gradle	
-Build & Deploy APK	Setup Gradle	2026-09-15T08:18:25.3102020Z   gradle-home-cache-cleanup: false
-Build & Deploy APK	Setup Gradle	2026-09-15T08:18:25.3102333Z   add-job-summary: always
-Build & Deploy APK	Setup Gradle	2026-09-15T08:18:25.3102633Z   add-job-summary-as-pr-comment: never
-Build & Deploy APK	Setup Gradle	2026-09-15T08:18:25.3102967Z   dependency-graph: disabled
-Build & Deploy APK	Setup Gradle	2026-09-15T08:18:25.3103343Z   dependency-graph-continue-on-failure: true
-Build & Deploy APK	Setup Gradle	2026-09-15T08:18:25.3103698Z   build-scan-publish: false
-Build & Deploy APK	Setup Gradle	2026-09-15T08:18:25.3103994Z   validate-wrappers: false
-Build & Deploy APK	Setup Gradle	2026-09-15T08:18:25.3104290Z   generate-job-summary: true
-Build & Deploy APK	Setup Gradle	2026-09-15T08:18:25.3104600Z   gradle-home-cache-strict-match: false
-Build & Deploy APK	Setup Gradle	2026-09-15T08:18:25.3104932Z   workflow-job-context: null
-Build & Deploy APK	Setup Gradle	2026-09-15T08:18:25.3108128Z   github-token: ***
-Build & Deploy APK	Setup Gradle	2026-09-15T08:18:25.3108435Z env:
-Build & Deploy APK	Setup Gradle	2026-09-15T08:18:25.3108796Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
-Build & Deploy APK	Setup Gradle	2026-09-15T08:18:25.3109349Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
-Build & Deploy APK	Setup Gradle	2026-09-15T08:18:25.3109778Z ##[endgroup]
-Build & Deploy APK	Setup Gradle	2026-09-15T08:18:25.5135037Z (node:2278) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
-Build & Deploy APK	Setup Gradle	2026-09-15T08:18:25.5138187Z (Use `node --trace-deprecation ...` to show where the warning was created)
-Build & Deploy APK	Setup Gradle	2026-09-15T08:18:25.7437830Z Merged default JDK locations into /home/runner/.m2/toolchains.xml
-Build & Deploy APK	Setup Gradle	2026-09-15T08:18:25.7439491Z ##[group]Restore Gradle state from cache
-Build & Deploy APK	Setup Gradle	2026-09-15T08:18:25.8196770Z ##[warning]Failed to restore gradle-home-v1|Linux|build[3e138a19d17b4b9e87cfbda606fe9da1]-a73846c4cb9cb8f0173c83648d503238bdddf405: Error: Cache service responded with 400
-Build & Deploy APK	Setup Gradle	2026-09-15T08:18:25.8297855Z Gradle User Home cache not found. Will initialize empty.
-Build & Deploy APK	Setup Gradle	2026-09-15T08:18:25.8299045Z ##[endgroup]
-Build & Deploy APK	Setup Gradle	2026-09-15T08:18:25.8846991Z ##[group]Provision Gradle 8.7
-Build & Deploy APK	Setup Gradle	2026-09-15T08:18:25.9409750Z ##[warning]Restore Gradle distribution 8.7 failed: Error: Cache service responded with 400
-Build & Deploy APK	Setup Gradle	2026-09-15T08:18:25.9412030Z Gradle distribution 8.7 not found in cache. Will download.
-Build & Deploy APK	Setup Gradle	2026-09-15T08:18:26.7624913Z Downloaded https://services.gradle.org/distributions/gradle-8.7-bin.zip to /home/runner/gradle-installations/downloads/gradle-8.7-bin.zip (size 134184980)
-Build & Deploy APK	Setup Gradle	2026-09-15T08:18:26.7799027Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/ProductivityApp/ProductivityApp --files-from manifest.txt --use-compress-program zstdmt
-Build & Deploy APK	Setup Gradle	2026-09-15T08:18:27.0301684Z ##[warning]Save Gradle distribution 8.7 failed: Error: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>0U/+oagAAAADQc4sI92oETbnB3IznU864TEFYMzExMDAwMTE1MDIzAEVkZ2U=
-Build & Deploy APK	Setup Gradle	2026-09-15T08:18:27.0320516Z [command]/usr/bin/unzip -o -q /home/runner/gradle-installations/downloads/gradle-8.7-bin.zip
-Build & Deploy APK	Setup Gradle	2026-09-15T08:18:27.9972250Z Extracted Gradle 8.7 to /home/runner/gradle-installations/installs/gradle-8.7
-Build & Deploy APK	Setup Gradle	2026-09-15T08:18:27.9973799Z Provisioned Gradle executable /home/runner/gradle-installations/installs/gradle-8.7/bin/gradle
-Build & Deploy APK	Setup Gradle	2026-09-15T08:18:27.9975082Z ##[endgroup]
-Build & Deploy APK	Build Release APK	﻿2026-09-15T08:18:28.0146387Z ##[group]Run gradle assembleRelease
-Build & Deploy APK	Build Release APK	2026-09-15T08:18:28.0147290Z ^[[36;1mgradle assembleRelease^[[0m
-Build & Deploy APK	Build Release APK	2026-09-15T08:18:28.0188216Z shell: /usr/bin/bash -e {0}
-Build & Deploy APK	Build Release APK	2026-09-15T08:18:28.0188513Z env:
-Build & Deploy APK	Build Release APK	2026-09-15T08:18:28.0188850Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
-Build & Deploy APK	Build Release APK	2026-09-15T08:18:28.0189414Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
-Build & Deploy APK	Build Release APK	2026-09-15T08:18:28.0189892Z   GRADLE_ACTION_ID: gradle/actions/setup-gradle
-Build & Deploy APK	Build Release APK	2026-09-15T08:18:28.0190262Z   GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
-Build & Deploy APK	Build Release APK	2026-09-15T08:18:28.0190620Z   GRADLE_BUILD_ACTION_CACHE_RESTORED: true
-Build & Deploy APK	Build Release APK	2026-09-15T08:18:28.0191145Z   DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
-Build & Deploy APK	Build Release APK	2026-09-15T08:18:28.0191723Z   DEVELOCITY_AUTO_INJECTION_CUSTOM_VALUE: gradle-actions
-Build & Deploy APK	Build Release APK	2026-09-15T08:18:28.0192113Z   GITHUB_DEPENDENCY_GRAPH_ENABLED: false
-Build & Deploy APK	Build Release APK	2026-09-15T08:18:28.0192414Z ##[endgroup]
-Build & Deploy APK	Build Release APK	2026-09-15T08:18:28.9474283Z 
-Build & Deploy APK	Build Release APK	2026-09-15T08:18:28.9479486Z Welcome to Gradle 8.7!
-Build & Deploy APK	Build Release APK	2026-09-15T08:18:28.9480201Z 
-Build & Deploy APK	Build Release APK	2026-09-15T08:18:28.9480917Z Here are the highlights of this release:
-Build & Deploy APK	Build Release APK	2026-09-15T08:18:28.9489765Z  - Compiling and testing with Java 22
-Build & Deploy APK	Build Release APK	2026-09-15T08:18:28.9517446Z  - Cacheable Groovy script compilation
-Build & Deploy APK	Build Release APK	2026-09-15T08:18:28.9547446Z  - New methods in lazy collection properties
-Build & Deploy APK	Build Release APK	2026-09-15T08:18:28.9577120Z 
-Build & Deploy APK	Build Release APK	2026-09-15T08:18:28.9597202Z For more details see https://docs.gradle.org/8.7/release-notes.html
-Build & Deploy APK	Build Release APK	2026-09-15T08:18:28.9598341Z 
-Build & Deploy APK	Build Release APK	2026-09-15T08:18:29.3454895Z Starting a Gradle Daemon (subsequent builds will be faster)
-Build & Deploy APK	Build Release APK	2026-09-15T08:19:26.2464394Z Checking the license for package Android SDK Build-Tools 33.0.1 in /usr/local/lib/android/sdk/licenses
-Build & Deploy APK	Build Release APK	2026-09-15T08:19:26.2466340Z License for package Android SDK Build-Tools 33.0.1 accepted.
-Build & Deploy APK	Build Release APK	2026-09-15T08:19:26.3457603Z Preparing "Install Android SDK Build-Tools 33.0.1 v.33.0.1".
-Build & Deploy APK	Build Release APK	2026-09-15T08:19:27.5453764Z "Install Android SDK Build-Tools 33.0.1 v.33.0.1" ready.
-Build & Deploy APK	Build Release APK	2026-09-15T08:19:27.5455061Z Installing Android SDK Build-Tools 33.0.1 in /usr/local/lib/android/sdk/build-tools/33.0.1
-Build & Deploy APK	Build Release APK	2026-09-15T08:19:27.5456136Z "Install Android SDK Build-Tools 33.0.1 v.33.0.1" complete.
-Build & Deploy APK	Build Release APK	2026-09-15T08:19:27.8458341Z "Install Android SDK Build-Tools 33.0.1 v.33.0.1" finished.
-Build & Deploy APK	Build Release APK	2026-09-15T08:19:28.4490873Z > Task :app:buildKotlinToolingMetadata
-Build & Deploy APK	Build Release APK	2026-09-15T08:19:28.4491968Z > Task :app:preBuild UP-TO-DATE
-Build & Deploy APK	Build Release APK	2026-09-15T08:19:28.4492768Z > Task :app:preReleaseBuild UP-TO-DATE
-Build & Deploy APK	Build Release APK	2026-09-15T08:19:34.6477527Z > Task :app:generateReleaseResValues
-Build & Deploy APK	Build Release APK	2026-09-15T08:19:34.6478452Z > Task :app:checkReleaseAarMetadata
-Build & Deploy APK	Build Release APK	2026-09-15T08:19:34.7455462Z > Task :app:mapReleaseSourceSetPaths
-Build & Deploy APK	Build Release APK	2026-09-15T08:19:34.7456815Z > Task :app:generateReleaseResources
-Build & Deploy APK	Build Release APK	2026-09-15T08:19:35.4460919Z > Task :app:packageReleaseResources
-Build & Deploy APK	Build Release APK	2026-09-15T08:19:35.7454516Z > Task :app:mergeReleaseResources
-Build & Deploy APK	Build Release APK	2026-09-15T08:19:36.4478182Z > Task :app:createReleaseCompatibleScreenManifests
-Build & Deploy APK	Build Release APK	2026-09-15T08:19:36.4537754Z > Task :app:extractDeepLinksRelease
-Build & Deploy APK	Build Release APK	2026-09-15T08:19:36.5455374Z > Task :app:parseReleaseLocalResources
-Build & Deploy APK	Build Release APK	2026-09-15T08:19:36.7478603Z 
-Build & Deploy APK	Build Release APK	2026-09-15T08:19:36.7493519Z > Task :app:processReleaseMainManifest
-Build & Deploy APK	Build Release APK	2026-09-15T08:19:36.7504502Z package="com.productivityapp" found in source AndroidManifest.xml: /home/runner/work/ProductivityApp/ProductivityApp/native_android/app/src/main/AndroidManifest.xml.
-Build & Deploy APK	Build Release APK	2026-09-15T08:19:36.7506885Z Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
-Build & Deploy APK	Build Release APK	2026-09-15T08:19:36.7509308Z Recommendation: remove package="com.productivityapp" from the source AndroidManifest.xml: /home/runner/work/ProductivityApp/ProductivityApp/native_android/app/src/main/AndroidManifest.xml.
-Build & Deploy APK	Build Release APK	2026-09-15T08:19:36.7527157Z 
-Build & Deploy APK	Build Release APK	2026-09-15T08:19:36.7543921Z > Task :app:processReleaseManifest
-Build & Deploy APK	Build Release APK	2026-09-15T08:19:38.1454874Z > Task :app:extractProguardFiles
-Build & Deploy APK	Build Release APK	2026-09-15T08:19:38.1457773Z > Task :app:javaPreCompileRelease
-Build & Deploy APK	Build Release APK	2026-09-15T08:19:38.1458759Z > Task :app:processReleaseManifestForPackage
-Build & Deploy APK	Build Release APK	2026-09-15T08:19:38.8458827Z > Task :app:mergeReleaseJniLibFolders
-Build & Deploy APK	Build Release APK	2026-09-15T08:19:39.2457637Z > Task :app:processReleaseResources
-Build & Deploy APK	Build Release APK	2026-09-15T08:19:40.4455390Z > Task :app:mergeReleaseNativeLibs NO-SOURCE
-Build & Deploy APK	Build Release APK	2026-09-15T08:19:45.8457113Z > Task :app:stripReleaseDebugSymbols NO-SOURCE
-Build & Deploy APK	Build Release APK	2026-09-15T08:19:45.8472482Z > Task :app:extractReleaseNativeSymbolTables NO-SOURCE
-Build & Deploy APK	Build Release APK	2026-09-15T08:19:45.8473452Z > Task :app:mergeReleaseNativeDebugMetadata NO-SOURCE
-Build & Deploy APK	Build Release APK	2026-09-15T08:19:46.5457713Z > Task :app:desugarReleaseFileDependencies
-Build & Deploy APK	Build Release APK	2026-09-15T08:19:46.6454130Z > Task :app:checkReleaseDuplicateClasses
-Build & Deploy APK	Build Release APK	2026-09-15T08:19:46.6473753Z > Task :app:mergeReleaseArtProfile
-Build & Deploy APK	Build Release APK	2026-09-15T08:19:56.2477461Z > Task :app:kspReleaseKotlin
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:16.6477495Z > Task :app:mergeExtDexRelease
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:20.9487747Z > Task :app:mergeReleaseShaders
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:20.9508404Z > Task :app:compileReleaseShaders NO-SOURCE
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:20.9527197Z > Task :app:generateReleaseAssets UP-TO-DATE
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:21.1487750Z > Task :app:mergeReleaseAssets
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:21.1507438Z > Task :app:compressReleaseAssets
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:21.7467234Z > Task :app:collectReleaseDependencies
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:22.3457582Z > Task :app:sdkReleaseDependencyData
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:22.3517800Z > Task :app:writeReleaseAppMetadata
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:22.3570987Z > Task :app:writeReleaseSigningConfigVersions
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:22.4483329Z > Task :app:optimizeReleaseResources
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:28.7479337Z e: file:///home/runner/work/ProductivityApp/ProductivityApp/native_android/app/src/main/java/com/productivityapp/ui/AppNavigation.kt:4:17 Unresolved reference: navigation
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:28.7487319Z 
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:28.7488538Z e: file:///home/runner/work/ProductivityApp/ProductivityApp/native_android/app/src/main/java/com/productivityapp/ui/AppNavigation.kt:5:17 Unresolved reference: navigation
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:28.7491299Z e: file:///home/runner/work/ProductivityApp/ProductivityApp/native_android/app/src/main/java/com/productivityapp/ui/AppNavigation.kt:6:17 Unresolved reference: navigation
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:28.7493639Z e: file:///home/runner/work/ProductivityApp/ProductivityApp/native_android/app/src/main/java/com/productivityapp/ui/AppNavigation.kt:7:17 Unresolved reference: navigation
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:28.7495968Z e: file:///home/runner/work/ProductivityApp/ProductivityApp/native_android/app/src/main/java/com/productivityapp/ui/AppNavigation.kt:16:34 Unresolved reference: NavHostController
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:28.7498669Z e: file:///home/runner/work/ProductivityApp/ProductivityApp/native_android/app/src/main/java/com/productivityapp/ui/AppNavigation.kt:16:54 Unresolved reference: rememberNavController
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:28.7501004Z e: file:///home/runner/work/ProductivityApp/ProductivityApp/native_android/app/src/main/java/com/productivityapp/ui/AppNavigation.kt:17:5 Unresolved reference: NavHost
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:28.7503306Z e: file:///home/runner/work/ProductivityApp/ProductivityApp/native_android/app/src/main/java/com/productivityapp/ui/AppNavigation.kt:18:9 Unresolved reference: composable
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:28.7505610Z e: file:///home/runner/work/ProductivityApp/ProductivityApp/native_android/app/src/main/java/com/productivityapp/ui/AppNavigation.kt:21:9 Unresolved reference: composable
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:28.7513271Z e: file:///home/runner/work/ProductivityApp/ProductivityApp/native_android/app/src/main/java/com/productivityapp/ui/AppNavigation.kt:24:9 Unresolved reference: composable
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:28.7516059Z e: file:///home/runner/work/ProductivityApp/ProductivityApp/native_android/app/src/main/java/com/productivityapp/ui/components/BrainDumpInput.kt:38:9 This material API is experimental and is likely to change or to be removed in the future.
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:28.7518272Z > Task :app:compileReleaseKotlin FAILED
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:28.8452803Z 
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:28.8492966Z 
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:28.8494601Z Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:28.8495555Z FAILURE: Build failed with an exception.
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:28.8496144Z 
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:28.8497306Z You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:28.8498890Z 
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:28.8499965Z For more on this, please refer to https://docs.gradle.org/8.7/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:28.8501508Z 30 actionable tasks: 30 executed
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:28.8508543Z 
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:28.8537181Z * What went wrong:
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:28.8547754Z Execution failed for task ':app:compileReleaseKotlin'.
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:28.8549367Z > A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:28.8550911Z    > Compilation error. See log for more details
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:28.8551509Z 
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:28.8551827Z * Try:
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:28.8552460Z > Run with --stacktrace option to get the stack trace.
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:28.8553319Z > Run with --info or --debug option to get more log output.
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:28.8554138Z > Run with --scan to get full insights.
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:28.8554878Z > Get more help at https://help.gradle.org.
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:28.8555450Z 
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:28.8555787Z BUILD FAILED in 2m
-Build & Deploy APK	Build Release APK	2026-09-15T08:20:29.3611411Z ##[error]Process completed with exit code 1.
-Build & Deploy APK	Post Setup Gradle	﻿2026-09-15T08:20:29.3802968Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
-Build & Deploy APK	Post Setup Gradle	2026-09-15T08:20:29.3804434Z Post job cleanup.
-Build & Deploy APK	Post Setup Gradle	2026-09-15T08:20:29.5713056Z In post-action step
-Build & Deploy APK	Post Setup Gradle	2026-09-15T08:20:29.5727057Z Stopping all Gradle daemons before saving Gradle User Home state
-Build & Deploy APK	Post Setup Gradle	2026-09-15T08:20:29.5728252Z Stopping Gradle daemons for /home/runner/gradle-installations/installs/gradle-8.7
-Build & Deploy APK	Post Setup Gradle	2026-09-15T08:20:29.5747991Z (node:2653) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
-Build & Deploy APK	Post Setup Gradle	2026-09-15T08:20:29.5749286Z (Use `node --trace-deprecation ...` to show where the warning was created)
-Build & Deploy APK	Post Setup Gradle	2026-09-15T08:20:29.5758072Z [command]/home/runner/gradle-installations/installs/gradle-8.7/bin/gradle --stop
-Build & Deploy APK	Post Setup Gradle	2026-09-15T08:20:30.5501775Z Stopping Daemon(s)
-Build & Deploy APK	Post Setup Gradle	2026-09-15T08:20:30.5505150Z 1 Daemon stopped
-Build & Deploy APK	Post Setup Gradle	2026-09-15T08:20:30.5687814Z ##[group]Caching Gradle state
-Build & Deploy APK	Post Setup Gradle	2026-09-15T08:20:30.6076331Z Caching generated-gradle-jars with path '/home/runner/.gradle/caches/8.7/generated-gradle-jars/gradle-api-8.7.jar' and cache key: gradle-generated-gradle-jars-v1-d6d47bedd9337a0be6f3a426277e63ee
-Build & Deploy APK	Post Setup Gradle	2026-09-15T08:20:30.6228180Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/ProductivityApp/ProductivityApp --files-from manifest.txt --use-compress-program zstdmt
-Build & Deploy APK	Post Setup Gradle	2026-09-15T08:20:31.0193514Z Caching dependencies with path '/home/runner/.gradle/caches/modules-*/files-*/*/*/*/*' and cache key: gradle-dependencies-v1-9b7177593cfffadb1f4e4e45c8f89f72
-Build & Deploy APK	Post Setup Gradle	2026-09-15T08:20:31.0334448Z Caching instrumented-jars with path '/home/runner/.gradle/caches/jars-*/*/' and cache key: gradle-instrumented-jars-v1-2b1406f03e5d68e4f5786f9c71d76e99
-Build & Deploy APK	Post Setup Gradle	2026-09-15T08:20:31.0611678Z Caching kotlin-dsl with path '/home/runner/.gradle/caches/*/kotlin-dsl/accessors/*/
-Build & Deploy APK	Post Setup Gradle	2026-09-15T08:20:31.0613416Z /home/runner/.gradle/caches/*/kotlin-dsl/scripts/*/' and cache key: gradle-kotlin-dsl-v1-ead4308ab02c831cd72ccb5fb38c159c
-Build & Deploy APK	Post Setup Gradle	2026-09-15T08:20:31.0775681Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/ProductivityApp/ProductivityApp --files-from manifest.txt --use-compress-program zstdmt
-Build & Deploy APK	Post Setup Gradle	2026-09-15T08:20:31.1028409Z Caching groovy-dsl with path '/home/runner/.gradle/caches/*/groovy-dsl/*/' and cache key: gradle-groovy-dsl-v1-571862c491b3f8e35c2103eb590b4c52
-Build & Deploy APK	Post Setup Gradle	2026-09-15T08:20:31.1538597Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/ProductivityApp/ProductivityApp --files-from manifest.txt --use-compress-program zstdmt
-Build & Deploy APK	Post Setup Gradle	2026-09-15T08:20:31.1865386Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/ProductivityApp/ProductivityApp --files-from manifest.txt --use-compress-program zstdmt
-Build & Deploy APK	Post Setup Gradle	2026-09-15T08:20:31.1974866Z ##[warning]Failed to save cache entry with path '/home/runner/.gradle/caches/jars-*/*/' and key: gradle-instrumented-jars-v1-2b1406f03e5d68e4f5786f9c71d76e99: Error: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>0z/+oagAAAADfTrwtnOdYRIq5WeTEf566TEFYRURHRTIwMTcARWRnZQ==
-Build & Deploy APK	Post Setup Gradle	2026-09-15T08:20:31.2185408Z ##[warning]Failed to save cache entry with path '/home/runner/.gradle/caches/8.7/generated-gradle-jars/gradle-api-8.7.jar' and key: gradle-generated-gradle-jars-v1-d6d47bedd9337a0be6f3a426277e63ee: Error: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>0z/+oagAAAAA8gA8+kkt0TbTQnvYDUjacTEFYMzExMDAwMTEyMDM1AEVkZ2U=
-Build & Deploy APK	Post Setup Gradle	2026-09-15T08:20:31.2822804Z ##[warning]Failed to save cache entry with path '/home/runner/.gradle/caches/*/groovy-dsl/*/' and key: gradle-groovy-dsl-v1-571862c491b3f8e35c2103eb590b4c52: Error: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>0z/+oagAAAAADTjjizvKoT45xuVhEjwDATEFYMzExMDAwMTA4MDQ3AEVkZ2U=
-Build & Deploy APK	Post Setup Gradle	2026-09-15T08:20:31.2905045Z ##[warning]Failed to save cache entry with path '/home/runner/.gradle/caches/*/kotlin-dsl/accessors/*/
-Build & Deploy APK	Post Setup Gradle	/home/runner/.gradle/caches/*/kotlin-dsl/scripts/*/' and key: gradle-kotlin-dsl-v1-ead4308ab02c831cd72ccb5fb38c159c: Error: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>0z/+oagAAAAATdmyLjWLbTqQ0N9QatQVtTEFYRURHRTE3MTIARWRnZQ==
-Build & Deploy APK	Post Setup Gradle	2026-09-15T08:20:31.5706476Z Caching transforms with path '/home/runner/.gradle/caches/transforms-4/*/
-Build & Deploy APK	Post Setup Gradle	2026-09-15T08:20:31.5707807Z /home/runner/.gradle/caches/*/transforms/*/' and cache key: gradle-transforms-v1-ce13fa585d735d4e4d3be2accfb15c8d
-Build & Deploy APK	Post Setup Gradle	2026-09-15T08:20:31.6293097Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/ProductivityApp/ProductivityApp --files-from manifest.txt --use-compress-program zstdmt
-Build & Deploy APK	Post Setup Gradle	2026-09-15T08:20:32.0449011Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/ProductivityApp/ProductivityApp --files-from manifest.txt --use-compress-program zstdmt
-Build & Deploy APK	Post Setup Gradle	2026-09-15T08:20:32.4446936Z ##[warning]Failed to save cache entry with path '/home/runner/.gradle/caches/modules-*/files-*/*/*/*/*' and key: gradle-dependencies-v1-9b7177593cfffadb1f4e4e45c8f89f72: Error: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>00P+oagAAAACST2vznUHBQIaASti+1jymTEFYMzExMDAwMTA5MDIzAEVkZ2U=
-Build & Deploy APK	Post Setup Gradle	2026-09-15T08:20:33.5111003Z ##[warning]Failed to save cache entry with path '/home/runner/.gradle/caches/transforms-4/*/
-Build & Deploy APK	Post Setup Gradle	/home/runner/.gradle/caches/*/transforms/*/' and key: gradle-transforms-v1-ce13fa585d735d4e4d3be2accfb15c8d: Error: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>00f+oagAAAAA5FbSIxBDZTIVoLGQe0Zl0TEFYMzExMDAwMTA5MDQ3AEVkZ2U=
-Build & Deploy APK	Post Setup Gradle	2026-09-15T08:20:33.8041051Z Caching Gradle User Home with cache key: gradle-home-v1|Linux|build[3e138a19d17b4b9e87cfbda606fe9da1]-a73846c4cb9cb8f0173c83648d503238bdddf405
-Build & Deploy APK	Post Setup Gradle	2026-09-15T08:20:33.8136072Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/ProductivityApp/ProductivityApp --files-from manifest.txt --use-compress-program zstdmt
-Build & Deploy APK	Post Setup Gradle	2026-09-15T08:20:33.9425515Z ##[warning]Failed to save cache entry with path '/home/runner/.gradle/caches,/home/runner/.gradle/notifications,/home/runner/.gradle/.setup-gradle' and key: gradle-home-v1|Linux|build[3e138a19d17b4b9e87cfbda606fe9da1]-a73846c4cb9cb8f0173c83648d503238bdddf405: Error: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>00f+oagAAAADFBqonP/QjT4LDS8oLXMxBTEFYRURHRTE5MDkARWRnZQ==
-Build & Deploy APK	Post Setup Gradle	2026-09-15T08:20:33.9429670Z ##[endgroup]
-Build & Deploy APK	Post Setup Gradle	2026-09-15T08:20:33.9431212Z Generating Job Summary
-Build & Deploy APK	Post Setup Gradle	2026-09-15T08:20:33.9444785Z Completed post-action step
-Build & Deploy APK	Post Set up JDK 17	﻿2026-09-15T08:20:33.9650800Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
-Build & Deploy APK	Post Set up JDK 17	2026-09-15T08:20:33.9652079Z Post job cleanup.
-Build & Deploy APK	Post Set up JDK 17	2026-09-15T08:20:34.1058785Z (node:2764) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
-Build & Deploy APK	Post Set up JDK 17	2026-09-15T08:20:34.1059881Z (Use `node --trace-deprecation ...` to show where the warning was created)
-Build & Deploy APK	Post Checkout Code	﻿2026-09-15T08:20:34.1237093Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
-Build & Deploy APK	Post Checkout Code	2026-09-15T08:20:34.1238395Z Post job cleanup.
-Build & Deploy APK	Post Checkout Code	2026-09-15T08:20:34.2183559Z [command]/usr/bin/git version
-Build & Deploy APK	Post Checkout Code	2026-09-15T08:20:34.2231422Z git version 2.55.0
-Build & Deploy APK	Post Checkout Code	2026-09-15T08:20:34.2281305Z Temporarily overriding HOME='/home/runner/work/_temp/48edde4c-565f-4801-b01d-90f2a72f8025' before making global git config changes
-Build & Deploy APK	Post Checkout Code	2026-09-15T08:20:34.2285205Z Adding repository directory to the temporary git global config as a safe directory
-Build & Deploy APK	Post Checkout Code	2026-09-15T08:20:34.2288732Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ProductivityApp/ProductivityApp
-Build & Deploy APK	Post Checkout Code	2026-09-15T08:20:34.2335378Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
-Build & Deploy APK	Post Checkout Code	2026-09-15T08:20:34.2381605Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
-Build & Deploy APK	Post Checkout Code	2026-09-15T08:20:34.2646692Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
-Build & Deploy APK	Post Checkout Code	2026-09-15T08:20:34.2679046Z http.https://github.com/.extraheader
-Build & Deploy APK	Post Checkout Code	2026-09-15T08:20:34.2691417Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
-Build & Deploy APK	Post Checkout Code	2026-09-15T08:20:34.2748459Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
-Build & Deploy APK	Post Checkout Code	2026-09-15T08:20:34.3002364Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
-Build & Deploy APK	Post Checkout Code	2026-09-15T08:20:34.3046023Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
-Build & Deploy APK	Complete job	﻿2026-09-15T08:20:34.3498551Z Cleaning up orphan processes
-Build & Deploy APK	Complete job	2026-09-15T08:20:34.3777082Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-java@v4, gradle/actions/setup-gradle@v3. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:13.9627871Z   gradle-home-cache-cleanup: false
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:13.9628130Z   add-job-summary: always
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:13.9628375Z   add-job-summary-as-pr-comment: never
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:13.9628646Z   dependency-graph: disabled
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:13.9628965Z   dependency-graph-continue-on-failure: true
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:13.9629261Z   build-scan-publish: false
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:13.9629496Z   validate-wrappers: false
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:13.9629731Z   generate-job-summary: true
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:13.9629984Z   gradle-home-cache-strict-match: false
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:13.9630648Z   workflow-job-context: null
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:13.9633149Z   github-token: ***
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:13.9633361Z env:
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:13.9633655Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:13.9634195Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:13.9634579Z   MAVEN_ARGS: -ntp
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:13.9634783Z ##[endgroup]
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:14.1588916Z (node:2263) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:14.1591103Z (Use `node --trace-deprecation ...` to show where the warning was created)
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:15.6328152Z Merged default JDK locations into /home/runner/.m2/toolchains.xml
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:15.6331307Z ##[group]Restore Gradle state from cache
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:15.7322481Z ##[warning]Failed to restore gradle-home-v1|Linux|build[3e138a19d17b4b9e87cfbda606fe9da1]-13ea20473d83ba3d84295de0ffc0b5e7990c95b8: Error: Cache service responded with 400
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:15.7407558Z Gradle User Home cache not found. Will initialize empty.
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:15.7408433Z ##[endgroup]
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:15.7866521Z ##[group]Provision Gradle 8.7
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:15.8520768Z ##[warning]Restore Gradle distribution 8.7 failed: Error: Cache service responded with 400
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:15.8523077Z Gradle distribution 8.7 not found in cache. Will download.
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:16.7989228Z Downloaded https://services.gradle.org/distributions/gradle-8.7-bin.zip to /home/runner/gradle-installations/downloads/gradle-8.7-bin.zip (size 134184980)
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:16.8206030Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/ProductivityApp/ProductivityApp --files-from manifest.txt --use-compress-program zstdmt
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:17.0386269Z ##[warning]Save Gradle distribution 8.7 failed: Error: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>0sQCpagAAAADygGDjfTd+QJPTDh1ZJs/gTEFYMzExMDAwMTEwMDQ3AEVkZ2U=
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:17.0410822Z [command]/usr/bin/unzip -o -q /home/runner/gradle-installations/downloads/gradle-8.7-bin.zip
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:18.0014005Z Extracted Gradle 8.7 to /home/runner/gradle-installations/installs/gradle-8.7
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:18.0015863Z Provisioned Gradle executable /home/runner/gradle-installations/installs/gradle-8.7/bin/gradle
+Build & Deploy APK	Setup Gradle	2026-09-15T08:24:18.0017424Z ##[endgroup]
+Build & Deploy APK	Build Release APK	﻿2026-09-15T08:24:18.0196358Z ##[group]Run gradle assembleRelease
+Build & Deploy APK	Build Release APK	2026-09-15T08:24:18.0196780Z ^[[36;1mgradle assembleRelease^[[0m
+Build & Deploy APK	Build Release APK	2026-09-15T08:24:18.0236418Z shell: /usr/bin/bash -e {0}
+Build & Deploy APK	Build Release APK	2026-09-15T08:24:18.0236720Z env:
+Build & Deploy APK	Build Release APK	2026-09-15T08:24:18.0237066Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+Build & Deploy APK	Build Release APK	2026-09-15T08:24:18.0237639Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+Build & Deploy APK	Build Release APK	2026-09-15T08:24:18.0238084Z   MAVEN_ARGS: -ntp
+Build & Deploy APK	Build Release APK	2026-09-15T08:24:18.0238361Z   GRADLE_ACTION_ID: gradle/actions/setup-gradle
+Build & Deploy APK	Build Release APK	2026-09-15T08:24:18.0238738Z   GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+Build & Deploy APK	Build Release APK	2026-09-15T08:24:18.0239073Z   GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+Build & Deploy APK	Build Release APK	2026-09-15T08:24:18.0239579Z   DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+Build & Deploy APK	Build Release APK	2026-09-15T08:24:18.0240446Z   DEVELOCITY_AUTO_INJECTION_CUSTOM_VALUE: gradle-actions
+Build & Deploy APK	Build Release APK	2026-09-15T08:24:18.0240842Z   GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+Build & Deploy APK	Build Release APK	2026-09-15T08:24:18.0241138Z ##[endgroup]
+Build & Deploy APK	Build Release APK	2026-09-15T08:24:19.0807689Z 
+Build & Deploy APK	Build Release APK	2026-09-15T08:24:19.0821278Z Welcome to Gradle 8.7!
+Build & Deploy APK	Build Release APK	2026-09-15T08:24:19.0821885Z 
+Build & Deploy APK	Build Release APK	2026-09-15T08:24:19.0822324Z Here are the highlights of this release:
+Build & Deploy APK	Build Release APK	2026-09-15T08:24:19.0840527Z  - Compiling and testing with Java 22
+Build & Deploy APK	Build Release APK	2026-09-15T08:24:19.0841241Z  - Cacheable Groovy script compilation
+Build & Deploy APK	Build Release APK	2026-09-15T08:24:19.0841833Z  - New methods in lazy collection properties
+Build & Deploy APK	Build Release APK	2026-09-15T08:24:19.0842178Z 
+Build & Deploy APK	Build Release APK	2026-09-15T08:24:19.0842706Z For more details see https://docs.gradle.org/8.7/release-notes.html
+Build & Deploy APK	Build Release APK	2026-09-15T08:24:19.0843371Z 
+Build & Deploy APK	Build Release APK	2026-09-15T08:24:20.0812066Z Starting a Gradle Daemon (subsequent builds will be faster)
+Build & Deploy APK	Build Release APK	2026-09-15T08:25:20.4792940Z Checking the license for package Android SDK Build-Tools 33.0.1 in /usr/local/lib/android/sdk/licenses
+Build & Deploy APK	Build Release APK	2026-09-15T08:25:20.4798036Z License for package Android SDK Build-Tools 33.0.1 accepted.
+Build & Deploy APK	Build Release APK	2026-09-15T08:25:20.4799042Z Preparing "Install Android SDK Build-Tools 33.0.1 v.33.0.1".
+Build & Deploy APK	Build Release APK	2026-09-15T08:25:21.6789836Z "Install Android SDK Build-Tools 33.0.1 v.33.0.1" ready.
+Build & Deploy APK	Build Release APK	2026-09-15T08:25:21.6791935Z Installing Android SDK Build-Tools 33.0.1 in /usr/local/lib/android/sdk/build-tools/33.0.1
+Build & Deploy APK	Build Release APK	2026-09-15T08:25:21.6792753Z "Install Android SDK Build-Tools 33.0.1 v.33.0.1" complete.
+Build & Deploy APK	Build Release APK	2026-09-15T08:25:21.9791066Z "Install Android SDK Build-Tools 33.0.1 v.33.0.1" finished.
+Build & Deploy APK	Build Release APK	2026-09-15T08:25:22.8806596Z > Task :app:buildKotlinToolingMetadata
+Build & Deploy APK	Build Release APK	2026-09-15T08:25:22.8810599Z > Task :app:preBuild UP-TO-DATE
+Build & Deploy APK	Build Release APK	2026-09-15T08:25:22.8811619Z > Task :app:preReleaseBuild UP-TO-DATE
+Build & Deploy APK	Build Release APK	2026-09-15T08:25:31.1810488Z > Task :app:generateReleaseResValues
+Build & Deploy APK	Build Release APK	2026-09-15T08:25:31.2789111Z > Task :app:checkReleaseAarMetadata
+Build & Deploy APK	Build Release APK	2026-09-15T08:25:31.3794412Z > Task :app:mapReleaseSourceSetPaths
+Build & Deploy APK	Build Release APK	2026-09-15T08:25:31.3795516Z > Task :app:generateReleaseResources
+Build & Deploy APK	Build Release APK	2026-09-15T08:25:32.0789772Z > Task :app:packageReleaseResources
+Build & Deploy APK	Build Release APK	2026-09-15T08:25:32.4789738Z > Task :app:mergeReleaseResources
+Build & Deploy APK	Build Release APK	2026-09-15T08:25:33.3811872Z > Task :app:createReleaseCompatibleScreenManifests
+Build & Deploy APK	Build Release APK	2026-09-15T08:25:33.3813021Z > Task :app:extractDeepLinksRelease
+Build & Deploy APK	Build Release APK	2026-09-15T08:25:33.5792466Z > Task :app:parseReleaseLocalResources
+Build & Deploy APK	Build Release APK	2026-09-15T08:25:33.7790966Z 
+Build & Deploy APK	Build Release APK	2026-09-15T08:25:33.7802536Z > Task :app:processReleaseMainManifest
+Build & Deploy APK	Build Release APK	2026-09-15T08:25:33.7803828Z package="com.productivityapp" found in source AndroidManifest.xml: /home/runner/work/ProductivityApp/ProductivityApp/native_android/app/src/main/AndroidManifest.xml.
+Build & Deploy APK	Build Release APK	2026-09-15T08:25:33.7805250Z Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Build & Deploy APK	Build Release APK	2026-09-15T08:25:33.7806627Z Recommendation: remove package="com.productivityapp" from the source AndroidManifest.xml: /home/runner/work/ProductivityApp/ProductivityApp/native_android/app/src/main/AndroidManifest.xml.
+Build & Deploy APK	Build Release APK	2026-09-15T08:25:33.8817667Z 
+Build & Deploy APK	Build Release APK	2026-09-15T08:25:33.8827821Z > Task :app:processReleaseManifest
+Build & Deploy APK	Build Release APK	2026-09-15T08:25:35.1812879Z > Task :app:javaPreCompileRelease
+Build & Deploy APK	Build Release APK	2026-09-15T08:25:35.1814028Z > Task :app:extractProguardFiles
+Build & Deploy APK	Build Release APK	2026-09-15T08:25:35.2793642Z > Task :app:mergeReleaseJniLibFolders
+Build & Deploy APK	Build Release APK	2026-09-15T08:25:36.7795445Z > Task :app:mergeReleaseNativeLibs NO-SOURCE
+Build & Deploy APK	Build Release APK	2026-09-15T08:25:36.7806805Z > Task :app:stripReleaseDebugSymbols NO-SOURCE
+Build & Deploy APK	Build Release APK	2026-09-15T08:25:36.7815899Z > Task :app:extractReleaseNativeSymbolTables NO-SOURCE
+Build & Deploy APK	Build Release APK	2026-09-15T08:25:36.7816938Z > Task :app:mergeReleaseNativeDebugMetadata NO-SOURCE
+Build & Deploy APK	Build Release APK	2026-09-15T08:25:37.3791700Z > Task :app:processReleaseManifestForPackage
+Build & Deploy APK	Build Release APK	2026-09-15T08:25:37.3809895Z > Task :app:checkReleaseDuplicateClasses
+Build & Deploy APK	Build Release APK	2026-09-15T08:25:38.0811618Z > Task :app:desugarReleaseFileDependencies
+Build & Deploy APK	Build Release APK	2026-09-15T08:26:04.2791251Z > Task :app:processReleaseResources
+Build & Deploy APK	Build Release APK	2026-09-15T08:26:08.0790575Z > Task :app:mergeExtDexRelease
+Build & Deploy APK	Build Release APK	2026-09-15T08:26:18.8789178Z > Task :app:mergeReleaseArtProfile
+Build & Deploy APK	Build Release APK	2026-09-15T08:26:18.9798462Z > Task :app:mergeReleaseShaders
+Build & Deploy APK	Build Release APK	2026-09-15T08:26:18.9821525Z > Task :app:compileReleaseShaders NO-SOURCE
+Build & Deploy APK	Build Release APK	2026-09-15T08:26:18.9851178Z > Task :app:generateReleaseAssets UP-TO-DATE
+Build & Deploy APK	Build Release APK	2026-09-15T08:26:18.9881275Z > Task :app:mergeReleaseAssets
+Build & Deploy APK	Build Release APK	2026-09-15T08:26:18.9910858Z > Task :app:compressReleaseAssets
+Build & Deploy APK	Build Release APK	2026-09-15T08:26:19.1790062Z > Task :app:collectReleaseDependencies
+Build & Deploy APK	Build Release APK	2026-09-15T08:26:19.2790657Z > Task :app:sdkReleaseDependencyData
+Build & Deploy APK	Build Release APK	2026-09-15T08:26:19.2795811Z > Task :app:optimizeReleaseResources
+Build & Deploy APK	Build Release APK	2026-09-15T08:26:19.2796467Z > Task :app:writeReleaseAppMetadata
+Build & Deploy APK	Build Release APK	2026-09-15T08:26:19.2797071Z > Task :app:writeReleaseSigningConfigVersions
+Build & Deploy APK	Build Release APK	2026-09-15T08:26:23.6821230Z > Task :app:kspReleaseKotlin
+Build & Deploy APK	Build Release APK	2026-09-15T08:26:27.5846918Z e: file:///home/runner/work/ProductivityApp/ProductivityApp/native_android/app/src/main/java/com/productivityapp/ui/components/BrainDumpInput.kt:38:9 This material API is experimental and is likely to change or to be removed in the future.
+Build & Deploy APK	Build Release APK	2026-09-15T08:26:27.5849719Z 
+Build & Deploy APK	Build Release APK	2026-09-15T08:26:27.5849992Z > Task :app:compileReleaseKotlin FAILED
+Build & Deploy APK	Build Release APK	2026-09-15T08:26:27.6788923Z 
+Build & Deploy APK	Build Release APK	2026-09-15T08:26:27.6789808Z FAILURE: Build failed with an exception.
+Build & Deploy APK	Build Release APK	2026-09-15T08:26:27.6801353Z 
+Build & Deploy APK	Build Release APK	2026-09-15T08:26:27.6814888Z 
+Build & Deploy APK	Build Release APK	2026-09-15T08:26:27.6818786Z Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+Build & Deploy APK	Build Release APK	2026-09-15T08:26:27.6820480Z 
+Build & Deploy APK	Build Release APK	2026-09-15T08:26:27.6821498Z You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+Build & Deploy APK	Build Release APK	2026-09-15T08:26:27.6822729Z 
+Build & Deploy APK	Build Release APK	2026-09-15T08:26:27.6823868Z For more on this, please refer to https://docs.gradle.org/8.7/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+Build & Deploy APK	Build Release APK	2026-09-15T08:26:27.6825356Z 30 actionable tasks: 30 executed
+Build & Deploy APK	Build Release APK	2026-09-15T08:26:27.6831020Z * What went wrong:
+Build & Deploy APK	Build Release APK	2026-09-15T08:26:27.6831715Z Execution failed for task ':app:compileReleaseKotlin'.
+Build & Deploy APK	Build Release APK	2026-09-15T08:26:27.6832795Z > A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+Build & Deploy APK	Build Release APK	2026-09-15T08:26:27.6833500Z    > Compilation error. See log for more details
+Build & Deploy APK	Build Release APK	2026-09-15T08:26:27.6833714Z 
+Build & Deploy APK	Build Release APK	2026-09-15T08:26:27.6833788Z * Try:
+Build & Deploy APK	Build Release APK	2026-09-15T08:26:27.6834038Z > Run with --stacktrace option to get the stack trace.
+Build & Deploy APK	Build Release APK	2026-09-15T08:26:27.6834453Z > Run with --info or --debug option to get more log output.
+Build & Deploy APK	Build Release APK	2026-09-15T08:26:27.6834794Z > Run with --scan to get full insights.
+Build & Deploy APK	Build Release APK	2026-09-15T08:26:27.6835095Z > Get more help at https://help.gradle.org.
+Build & Deploy APK	Build Release APK	2026-09-15T08:26:27.6835296Z 
+Build & Deploy APK	Build Release APK	2026-09-15T08:26:27.6835389Z BUILD FAILED in 2m 9s
+Build & Deploy APK	Build Release APK	2026-09-15T08:26:28.1611299Z ##[error]Process completed with exit code 1.
+Build & Deploy APK	Post Setup Gradle	﻿2026-09-15T08:26:28.1793112Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Build & Deploy APK	Post Setup Gradle	2026-09-15T08:26:28.1794403Z Post job cleanup.
+Build & Deploy APK	Post Setup Gradle	2026-09-15T08:26:28.3867923Z In post-action step
+Build & Deploy APK	Post Setup Gradle	2026-09-15T08:26:28.3877668Z Stopping all Gradle daemons before saving Gradle User Home state
+Build & Deploy APK	Post Setup Gradle	2026-09-15T08:26:28.3878882Z Stopping Gradle daemons for /home/runner/gradle-installations/installs/gradle-8.7
+Build & Deploy APK	Post Setup Gradle	2026-09-15T08:26:28.3893456Z (node:2635) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+Build & Deploy APK	Post Setup Gradle	2026-09-15T08:26:28.3894940Z (Use `node --trace-deprecation ...` to show where the warning was created)
+Build & Deploy APK	Post Setup Gradle	2026-09-15T08:26:28.3902328Z [command]/home/runner/gradle-installations/installs/gradle-8.7/bin/gradle --stop
+Build & Deploy APK	Post Setup Gradle	2026-09-15T08:26:29.3581782Z Stopping Daemon(s)
+Build & Deploy APK	Post Setup Gradle	2026-09-15T08:26:29.3587072Z 1 Daemon stopped
+Build & Deploy APK	Post Setup Gradle	2026-09-15T08:26:29.3797124Z ##[group]Caching Gradle state
+Build & Deploy APK	Post Setup Gradle	2026-09-15T08:26:29.4161190Z Caching generated-gradle-jars with path '/home/runner/.gradle/caches/8.7/generated-gradle-jars/gradle-api-8.7.jar' and cache key: gradle-generated-gradle-jars-v1-d6d47bedd9337a0be6f3a426277e63ee
+Build & Deploy APK	Post Setup Gradle	2026-09-15T08:26:29.4304761Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/ProductivityApp/ProductivityApp --files-from manifest.txt --use-compress-program zstdmt
+Build & Deploy APK	Post Setup Gradle	2026-09-15T08:26:29.8933101Z Caching dependencies with path '/home/runner/.gradle/caches/modules-*/files-*/*/*/*/*' and cache key: gradle-dependencies-v1-09b3f1136ee8fa2c12748ecc1dea1a02
+Build & Deploy APK	Post Setup Gradle	2026-09-15T08:26:29.9037962Z Caching instrumented-jars with path '/home/runner/.gradle/caches/jars-*/*/' and cache key: gradle-instrumented-jars-v1-2b1406f03e5d68e4f5786f9c71d76e99
+Build & Deploy APK	Post Setup Gradle	2026-09-15T08:26:29.9460887Z Caching kotlin-dsl with path '/home/runner/.gradle/caches/*/kotlin-dsl/accessors/*/
+Build & Deploy APK	Post Setup Gradle	2026-09-15T08:26:29.9462403Z /home/runner/.gradle/caches/*/kotlin-dsl/scripts/*/' and cache key: gradle-kotlin-dsl-v1-26e82993a9a9712a3f840aa70eacc11f
+Build & Deploy APK	Post Setup Gradle	2026-09-15T08:26:29.9516921Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/ProductivityApp/ProductivityApp --files-from manifest.txt --use-compress-program zstdmt
+Build & Deploy APK	Post Setup Gradle	2026-09-15T08:26:29.9784774Z Caching groovy-dsl with path '/home/runner/.gradle/caches/*/groovy-dsl/*/' and cache key: gradle-groovy-dsl-v1-571862c491b3f8e35c2103eb590b4c52
+Build & Deploy APK	Post Setup Gradle	2026-09-15T08:26:30.0136995Z ##[warning]Failed to save cache entry with path '/home/runner/.gradle/caches/8.7/generated-gradle-jars/gradle-api-8.7.jar' and key: gradle-generated-gradle-jars-v1-d6d47bedd9337a0be6f3a426277e63ee: Error: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>0NQGpagAAAACagf0FgoGNSb2XnIxg/oEqTEFYRURHRTE1MTEARWRnZQ==
+Build & Deploy APK	Post Setup Gradle	2026-09-15T08:26:30.0525812Z ##[warning]Failed to save cache entry with path '/home/runner/.gradle/caches/jars-*/*/' and key: gradle-instrumented-jars-v1-2b1406f03e5d68e4f5786f9c71d76e99: Error: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>0NgGpagAAAAA1Zd3X3ZxaS4xHGMiNpmyQTEFYRURHRTIwMTIARWRnZQ==
+Build & Deploy APK	Post Setup Gradle	2026-09-15T08:26:30.0566534Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/ProductivityApp/ProductivityApp --files-from manifest.txt --use-compress-program zstdmt
+Build & Deploy APK	Post Setup Gradle	2026-09-15T08:26:30.0772450Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/ProductivityApp/ProductivityApp --files-from manifest.txt --use-compress-program zstdmt
+Build & Deploy APK	Post Setup Gradle	2026-09-15T08:26:30.1562852Z ##[warning]Failed to save cache entry with path '/home/runner/.gradle/caches/*/groovy-dsl/*/' and key: gradle-groovy-dsl-v1-571862c491b3f8e35c2103eb590b4c52: Error: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>0NgGpagAAAADOPlwk+8vwT7pbttB4easgTEFYMzExMDAwMTExMDE5AEVkZ2U=
+Build & Deploy APK	Post Setup Gradle	2026-09-15T08:26:30.1922102Z ##[warning]Failed to save cache entry with path '/home/runner/.gradle/caches/*/kotlin-dsl/accessors/*/
+Build & Deploy APK	Post Setup Gradle	/home/runner/.gradle/caches/*/kotlin-dsl/scripts/*/' and key: gradle-kotlin-dsl-v1-26e82993a9a9712a3f840aa70eacc11f: Error: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>0NgGpagAAAAA39PGiKrc8SI8b+9ujFwIlTEFYRURHRTE2MjEARWRnZQ==
+Build & Deploy APK	Post Setup Gradle	2026-09-15T08:26:30.4573483Z Caching transforms with path '/home/runner/.gradle/caches/transforms-4/*/
+Build & Deploy APK	Post Setup Gradle	2026-09-15T08:26:30.4574921Z /home/runner/.gradle/caches/*/transforms/*/' and cache key: gradle-transforms-v1-97cae17eb89fd429a044cd8ec716a3c5
+Build & Deploy APK	Post Setup Gradle	2026-09-15T08:26:30.5193861Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/ProductivityApp/ProductivityApp --files-from manifest.txt --use-compress-program zstdmt
+Build & Deploy APK	Post Setup Gradle	2026-09-15T08:26:30.9965449Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/ProductivityApp/ProductivityApp --files-from manifest.txt --use-compress-program zstdmt
+Build & Deploy APK	Post Setup Gradle	2026-09-15T08:26:31.4370050Z ##[warning]Failed to save cache entry with path '/home/runner/.gradle/caches/modules-*/files-*/*/*/*/*' and key: gradle-dependencies-v1-09b3f1136ee8fa2c12748ecc1dea1a02: Error: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>0NwGpagAAAABk5dtXYxrZSrgpurzAoqYKTEFYRURHRTIwMjEARWRnZQ==
+Build & Deploy APK	Post Setup Gradle	2026-09-15T08:26:32.5254898Z ##[warning]Failed to save cache entry with path '/home/runner/.gradle/caches/transforms-4/*/
+Build & Deploy APK	Post Setup Gradle	/home/runner/.gradle/caches/*/transforms/*/' and key: gradle-transforms-v1-97cae17eb89fd429a044cd8ec716a3c5: Error: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>0OAGpagAAAACbHtnk50YOTJFYhYNzrOjcTEFYMzExMDAwMTE0MDI5AEVkZ2U=
+Build & Deploy APK	Post Setup Gradle	2026-09-15T08:26:32.8441914Z Caching Gradle User Home with cache key: gradle-home-v1|Linux|build[3e138a19d17b4b9e87cfbda606fe9da1]-13ea20473d83ba3d84295de0ffc0b5e7990c95b8
+Build & Deploy APK	Post Setup Gradle	2026-09-15T08:26:32.8541422Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/ProductivityApp/ProductivityApp --files-from manifest.txt --use-compress-program zstdmt
+Build & Deploy APK	Post Setup Gradle	2026-09-15T08:26:32.9820983Z ##[warning]Failed to save cache entry with path '/home/runner/.gradle/caches,/home/runner/.gradle/notifications,/home/runner/.gradle/.setup-gradle' and key: gradle-home-v1|Linux|build[3e138a19d17b4b9e87cfbda606fe9da1]-13ea20473d83ba3d84295de0ffc0b5e7990c95b8: Error: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>0OAGpagAAAABzQQUJpSR1Qa46OyZe5aYFTEFYRURHRTE3MTIARWRnZQ==
+Build & Deploy APK	Post Setup Gradle	2026-09-15T08:26:32.9826109Z ##[endgroup]
+Build & Deploy APK	Post Setup Gradle	2026-09-15T08:26:32.9826399Z Generating Job Summary
+Build & Deploy APK	Post Setup Gradle	2026-09-15T08:26:32.9839131Z Completed post-action step
+Build & Deploy APK	Post Set up JDK 17	﻿2026-09-15T08:26:33.0047764Z Post job cleanup.
+Build & Deploy APK	Post Checkout Code	﻿2026-09-15T08:26:33.1559573Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Build & Deploy APK	Post Checkout Code	2026-09-15T08:26:33.1562069Z Post job cleanup.
+Build & Deploy APK	Post Checkout Code	2026-09-15T08:26:33.2490900Z [command]/usr/bin/git version
+Build & Deploy APK	Post Checkout Code	2026-09-15T08:26:33.2537373Z git version 2.55.0
+Build & Deploy APK	Post Checkout Code	2026-09-15T08:26:33.2583930Z Temporarily overriding HOME='/home/runner/work/_temp/030fb7ed-3866-4fd4-8508-27091e6a58de' before making global git config changes
+Build & Deploy APK	Post Checkout Code	2026-09-15T08:26:33.2585787Z Adding repository directory to the temporary git global config as a safe directory
+Build & Deploy APK	Post Checkout Code	2026-09-15T08:26:33.2591237Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ProductivityApp/ProductivityApp
+Build & Deploy APK	Post Checkout Code	2026-09-15T08:26:33.2633013Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Build & Deploy APK	Post Checkout Code	2026-09-15T08:26:33.2671799Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Build & Deploy APK	Post Checkout Code	2026-09-15T08:26:33.2952371Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Build & Deploy APK	Post Checkout Code	2026-09-15T08:26:33.2982744Z http.https://github.com/.extraheader
+Build & Deploy APK	Post Checkout Code	2026-09-15T08:26:33.2995179Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Build & Deploy APK	Post Checkout Code	2026-09-15T08:26:33.3030676Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Build & Deploy APK	Post Checkout Code	2026-09-15T08:26:33.3302638Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Build & Deploy APK	Post Checkout Code	2026-09-15T08:26:33.3344868Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Build & Deploy APK	Complete job	﻿2026-09-15T08:26:33.3750106Z Cleaning up orphan processes
+Build & Deploy APK	Complete job	2026-09-15T08:26:33.4043428Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, gradle/actions/setup-gradle@v3. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
