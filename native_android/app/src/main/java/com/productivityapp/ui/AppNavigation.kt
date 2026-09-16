@@ -9,9 +9,10 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.productivityapp.TaskViewModel
 import com.productivityapp.ui.screens.TaskDetailScreen
-import com.productivityapp.ui.screens.GraphVisualizationScreen
+import com.productivityapp.ui.screens.KnowledgeGraphCanvas
 import com.productivityapp.ui.screens.FocusModeScreen
 import com.productivityapp.ui.screens.SettingsScreen
+import androidx.compose.runtime.collectAsState
 
 sealed class Screen(val route: String) {
     object Main : Screen("main")
@@ -60,8 +61,8 @@ fun AppNavigation(
             )
         }
         composable(Screen.Graph.route) {
-            val tasks = androidx.compose.runtime.collectAsState(taskViewModel.tasks, emptyList()).value
-            GraphVisualizationScreen(
+            val tasks = taskViewModel.tasks.collectAsState(initial = emptyList()).value
+            KnowledgeGraphCanvas(
                 tasks = tasks,
                 edges = emptyList(),
                 onNodeTapped = { taskId ->
